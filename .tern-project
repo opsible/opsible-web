@@ -1,0 +1,15 @@
+{
+  "ecmaVersion": 7,
+  "libs": [
+    "ecmascript",
+    "browser"
+  ],
+  "plugins": {
+    "commonjs": true,
+    "doc_comment": true,
+    "es_modules": true,
+    "modules": true,
+    "node": true,
+    "webpack": true
+  }
+}

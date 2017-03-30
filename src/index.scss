@@ -1,0 +1,139 @@
+// @import url('https://fonts.googleapis.com/css?family=Dosis:500,700&subset=latin-ext');
+
+body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  font-family: 'Dosis', sans-serif;
+}
+
+@mixin backgrounds() {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#background {
+  @include backgrounds();
+  background-image: url(assets/background.jpg);
+}
+
+#background-blur {
+  @include backgrounds();
+  background-image: url(assets/background-blur.jpg);
+  opacity: 0.0;
+}
+
+#background-white {
+  @include backgrounds();
+  background-color: white;
+  opacity: 0.9;
+}
+
+#foreground {
+  height: 200%;
+}
+
+.slide {
+  height: 50%;
+  position: relative;
+}
+
+#slide-1 {
+  text-align: center;
+
+  h1 {
+    margin-top: 20%;
+    font-size: 10em;
+    font-family: 'Baloo Bhaina', sans-serif;
+
+    .o {
+      display: inline-block;
+      animation: spin 4s ease-in-out infinite;
+      color: rgba(0,0,0,0);
+      background-image: url(assets/logo-circle.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding-top: 0.25em;
+    }
+
+    .ps {
+      color: #c83737;
+    }
+
+    .i {
+      color: #e9afaf;
+    }
+
+    .ble {
+      color: #4d4d4d;
+    }
+  }
+
+  @keyframes spin { 
+    25% {
+      transform:rotate(360deg);
+    }
+
+    100% {
+      transform:rotate(360deg);
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: #888;
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: -0.8em;
+  }
+
+  a {
+    margin-top: 6em;
+  }
+
+}
+
+#slide-2 {
+  position: absolute;
+  top: 50%;
+  padding: 10% 0% 5% 0%;
+
+  .intro {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ccc;
+    padding: 1em;
+
+    .photo {
+      text-align: center;
+
+      img {
+        margin-top: -20%;
+        width: 50%;
+      }
+    }
+    .name {
+      text-align: center;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+}
+
+
