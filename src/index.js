@@ -31,7 +31,7 @@ $(() => {
 
   const $root = $('html, body');
 
-  $(document).on('click', 'a', (e) => {
+  $(document).on('click', 'a.next', (e) => {
     e.preventDefault();
 
     $root.animate({
