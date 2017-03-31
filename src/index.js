@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/scss/bootstrap.scss';
 import './index.scss';
 
 $(() => {
