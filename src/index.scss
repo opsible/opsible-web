@@ -75,7 +75,6 @@ button {
   text-align: center;
 
   h1 {
-    font-size: 5em;
     font-family: 'Baloo Bhaina', sans-serif;
 
     .o {
@@ -103,12 +102,6 @@ button {
 
   }
 
-  @media (min-width: 992px) {
-    h1 {
-      font-size: 10em;
-    }
-  }
-
   @keyframes spin { 
     25% {
       transform:rotate(360deg);
@@ -123,22 +116,49 @@ button {
     text-transform: uppercase;
     color: #888;
     font-weight: bold;
-    font-size: 1.5em;
     margin-top: -0.8em;
   }
-
-  @media (min-width: 992px) {
-    h2 {
-      font-size: 3em;
-    }
-  }
-
 
   a {
     margin-top: 6em;
     font-weight: bold;
   }
 
+}
+
+@media (min-width: 0px) {
+  #slide-1 {
+    h1 { font-size: 50pt; }
+    h2 { font-size: 15pt; }
+  }
+}
+
+@media (min-width: 576px) {
+  #slide-1 {
+    h1 { font-size: 70pt; }
+    h2 { font-size: 21pt; }
+  }
+}
+
+@media (min-width: 768px) {
+  #slide-1 {
+    h1 { font-size: 90pt; }
+    h2 { font-size: 27pt; }
+  }
+}
+
+@media (min-width: 992px) {
+  #slide-1 {
+    h1 { font-size: 110pt; }
+    h2 { font-size: 33pt; }
+  }
+}
+
+@media (min-width: 1200px) {
+  #slide-1 {
+    h1 { font-size: 130pt; }
+    h2 { font-size: 39pt; }
+  }
 }
 
 #slide-2 {
@@ -183,7 +203,16 @@ button {
 }
 
 
-@media (min-width: 991px) {
+@media (max-width: 768px) {
+  #slide-2 {
+    .intro {
+      margin-bottom: 3em;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
   #slide-2 {
     padding: 10% 0% 5% 0%;
 
